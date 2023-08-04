@@ -1,0 +1,36 @@
+{
+  "name": "deckgl-examples-brushing",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "vite --open",
+    "start-local": "vite --config ../../vite.config.local.mjs",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@canvasjs/react-charts": "^1.0.0",
+    "@duckdb/duckdb-wasm": "^1.27.0",
+    "@duckdb/react-duckdb": "^1.27.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.7",
+    "d3-scale": "^4.0.2",
+    "deck.gl": "8.2.0",
+    "kepler.gl": "^2.5.0",
+    "mapbox-gl": "^2.15.0",
+    "maplibre-gl": "^2.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-map-gl": "^7.0.0",
+    "react-palm": "^3.3.8",
+    "styled-components": "^5.3.11",
+    "swr": "^2.2.0"
+  },
+  "devDependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
+    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+    "typescript": "^4.6.0",
+    "vite": "^4.0.0"
+  }
+}

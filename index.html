@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>deck.gl Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+    </style>
+    <script type="module">
+      import en from './en';
+      window.require = (...args) => {
+        // TODO
+        return {default:en}
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-quadtree@3"></script>
+    <!-- KARELIA  qued tree -->
+  </head>
+  <body>
+    <!-- <div id="root"></div>
+    <script type="module" src="./App2.jsx"></script> -->
+    <div id="app"></div>
+    <div id="map"></div>
+  </body>
+
+  <script type="module">
+    import { renderToDOM } from "./app.jsx";
+    renderToDOM(document.getElementById("app"));
+  </script>
+</html>
